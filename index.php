@@ -2,6 +2,7 @@
 <html>
 	<head>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script type="text/javascript" src="skript.js"></script>
 		<title>Priidu leht</title>
 	</head>
 	<body>
@@ -20,6 +21,9 @@
     $l = mysqli_connect($host, $user, $pass, $db);
     mysqli_query($l, "SET CHARACTER SET UTF8") or
             die("Error, ei saa andmebaasi charsetti seatud");
+			
     mysqli_close($l);?>
+	<br>
+	<input type="button" value="Vajuta siia!" onclick="msg()"/> 
 	</body>
 </html>
